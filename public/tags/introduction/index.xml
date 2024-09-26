@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction on PowerShell and other technologies...</title>
+    <link>http://localhost:1313/tags/introduction/</link>
+    <description>Recent content in Introduction on PowerShell and other technologies...</description>
+    <generator>Hugo</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 26 Sep 2024 12:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome</title>
+      <link>http://localhost:1313/posts/introduction/</link>
+      <pubDate>Thu, 26 Sep 2024 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/introduction/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to my blog, this blog will mostly be about my adventures and trials in my job as an IT professional. It will contain snippets of code to solve the problems I come across on a day to day basis.&lt;/p&gt;&#xA;&lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;m a 25-year veteran of the IT world, I&amp;rsquo;ve done pretty much any job in IT. I&amp;rsquo;ve been a trainer, I&amp;rsquo;ve done hardware support and software support. I&amp;rsquo;ve done most IT Professional tasks, from creating specifications for IT equipment, negotiated prices, arranged ordering, through to setting up and provisioning the hardware and installing and configuring the required software.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

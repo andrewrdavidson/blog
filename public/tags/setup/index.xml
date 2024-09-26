@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Setup on PowerShell and other technologies...</title>
+    <link>http://localhost:1313/tags/setup/</link>
+    <description>Recent content in Setup on PowerShell and other technologies...</description>
+    <generator>Hugo</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 26 Sep 2024 13:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/setup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I setup this Hugo Blog</title>
+      <link>http://localhost:1313/posts/setup-hugo-blog/</link>
+      <pubDate>Thu, 26 Sep 2024 13:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/setup-hugo-blog/</guid>
+      <description>&lt;nav id=&#34;TableOfContents&#34;&gt;&#xA;  &lt;ul&gt;&#xA;    &lt;li&gt;&#xA;      &lt;ul&gt;&#xA;        &lt;li&gt;&lt;/li&gt;&#xA;      &lt;/ul&gt;&#xA;    &lt;/li&gt;&#xA;  &lt;/ul&gt;&#xA;&lt;/nav&gt;&#xA;&lt;h4 id=&#34;install-pre-requisites&#34;&gt;Install Pre-Requisites&lt;/h4&gt;&#xA;&lt;h5 id=&#34;install-powershell-7&#34;&gt;Install PowerShell 7&lt;/h5&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;winget install --id Microsoft.Powershell --source winget&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;install-visualstudio-code&#34;&gt;Install VisualStudio Code&lt;/h5&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;winget install --id Microsoft.VisualStudioCode --source winget&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;code --install-extension ms-vscode.powershell&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;install-hugo-on-windows-11&#34;&gt;Install Hugo on Windows 11&lt;/h5&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;winget install --id Hugo.Hugo.Extended&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;install-windows-terminal-optional&#34;&gt;Install Windows Terminal (Optional)&lt;/h5&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;winget install --id Microsoft.WindowsTerminal --source winget&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;create-a-repo-in-github&#34;&gt;Create a repo in Github&lt;/h4&gt;&#xA;&lt;p&gt;Create yourself a repo in your GitHub account&#xA;I&amp;rsquo;ve created mine as blog&#xA;Clone that down to your dev computer (the one above where you installed Hugo)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

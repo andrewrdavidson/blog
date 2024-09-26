@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+
+  
+<html itemscope itemtype="https://schema.org/WebPage" class="no-js" lang="en">
+
+<head prefix="og: http://ogp.me/ns#"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="http://localhost:1313/">
+    <meta name="author" content="Andrew Davidson">
+    <meta name="description" content="PowerShell and other technologies... blog">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.134.3">
+    <title>
+        
+           
+               How I setup this Hugo Blog &vert; PowerShell and other technologies...
+           
+        
+    </title>
+    <meta itemprop="name" content="How I setup this Hugo Blog">
+    <meta itemprop="description" content="How I setup this Hugo Blog - PowerShell and other technologies... blog">
+    <meta property="og:site_name" content="PowerShell and other technologies...">
+
+    <meta property="og:url" content="http://localhost:1313/posts/setup-hugo-blog/">
+  <meta property="og:site_name" content="PowerShell and other technologies...">
+  <meta property="og:title" content="How I setup this Hugo Blog">
+  <meta property="og:description" content=" Install Pre-Requisites Install PowerShell 7 winget install --id Microsoft.Powershell --source winget Install VisualStudio Code winget install --id Microsoft.VisualStudioCode --source winget code --install-extension ms-vscode.powershell Install Hugo on Windows 11 winget install --id Hugo.Hugo.Extended Install Windows Terminal (Optional) winget install --id Microsoft.WindowsTerminal --source winget Create a repo in Github Create yourself a repo in your GitHub account I’ve created mine as blog Clone that down to your dev computer (the one above where you installed Hugo)">
+  <meta property="og:locale" content="en_gb">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-09-26T13:00:00+01:00">
+    <meta property="article:modified_time" content="2024-09-26T13:00:00+01:00">
+    <meta property="article:tag" content="Setup">
+    <meta property="article:tag" content="Github-Pages">
+    <meta property="article:tag" content="Github-Actions">
+
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+
+
+    
+    <link rel="canonical" href="http://localhost:1313/posts/setup-hugo-blog/">
+    
+
+    <link rel="stylesheet" href="http://localhost:1313/theme.css">
+
+    
+
+    
+        
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css">
+        
+    
+
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+    
+
+    
+    <nav class="permanentTopNav sticky">
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="http://localhost:1313/page/about/">About</a></li>
+                
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header class="sticky">
+
+    <div class="container">
+        <div class="logo">
+            <a href="/" class="logo">
+                
+                    <img src="/andrewD_256.png" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title">
+                <a href="/">
+                    PowerShell and other technologies...
+                </a>
+            </h3>
+
+            
+                <span class="subtitle">My adventures in IT</span>
+            
+        </div>
+
+        
+
+        
+            <div class="toggler permanentTopNav">
+        
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+    </div>
+</header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="http://localhost:1313/posts/setup-hugo-blog/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="http://localhost:1313/posts/setup-hugo-blog/">
+            How I setup this Hugo Blog
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2024-09-26</span>
+            
+        
+
+        
+
+        
+
+        
+    </div>
+
+    
+        
+
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<h1 id="install-pre-requisites">Install Pre-Requisites</h1>
+<h5 id="install-powershell-7">Install PowerShell 7</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>winget install --id Microsoft.Powershell --source winget
+</span></span></code></pre></div><h5 id="install-visualstudio-code">Install VisualStudio Code</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>winget install --id Microsoft.VisualStudioCode --source winget
+</span></span><span style="display:flex;"><span>code --install-extension ms-vscode.powershell
+</span></span></code></pre></div><h5 id="install-hugo-on-windows-11">Install Hugo on Windows 11</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>winget install --id Hugo.Hugo.Extended
+</span></span></code></pre></div><h5 id="install-windows-terminal-optional">Install Windows Terminal (Optional)</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>winget install --id Microsoft.WindowsTerminal --source winget
+</span></span></code></pre></div><h4 id="create-a-repo-in-github">Create a repo in Github</h4>
+<p>Create yourself a repo in your GitHub account
+I&rsquo;ve created mine as blog
+Clone that down to your dev computer (the one above where you installed Hugo)</p>
+<h4 id="create-a-new-site">Create a new site</h4>
+<blockquote>
+<p>Note: My source root folder is <code>D:\Source</code>, obviously replace with the source path you are using</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Set-Location -Path <span style="color:#e6db74">&#34;D:\source&#34;</span>
+</span></span><span style="display:flex;"><span>hugo new site blog
+</span></span><span style="display:flex;"><span>Set-Location -Path <span style="color:#e6db74">&#34;./blog&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;Blog Site&#34;</span> | Out-File <span style="color:#e6db74">&#34;./README.md&#34;</span>
+</span></span><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git add --all
+</span></span><span style="display:flex;"><span>git commit -am <span style="color:#e6db74">&#34;First Commit&#34;</span>
+</span></span><span style="display:flex;"><span>git branch -M main
+</span></span><span style="display:flex;"><span>git remote add origin https<span style="color:#960050;background-color:#1e0010">:</span>//github.com/andrewrdavidson/blog.git
+</span></span><span style="display:flex;"><span>git push -u origin main
+</span></span><span style="display:flex;"><span>git clone https<span style="color:#960050;background-color:#1e0010">:</span>//github.com/Lednerb/bilberry-hugo-theme.git themes/bilberry-hugo-theme
+</span></span><span style="display:flex;"><span>Remove-Item -Path <span style="color:#e6db74">&#34;./themes/bilberry-hugo-theme/.git&#34;</span> -Recurse -Force
+</span></span><span style="display:flex;"><span>Remove-Item -Path <span style="color:#e6db74">&#34;./themes/bilberry-hugo-theme/.github&#34;</span> -Recurse -Force
+</span></span><span style="display:flex;"><span>git add --all
+</span></span><span style="display:flex;"><span>git commit -am <span style="color:#e6db74">&#34;Add theme&#34;</span>
+</span></span><span style="display:flex;"><span>git push -u origin main
+</span></span><span style="display:flex;"><span>$hugoConfigFile = <span style="color:#e6db74">@&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">baseURL = &#39;https://blog.kelrys.com/&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">languageCode = &#39;en-gb&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">title = &#39;PowerShell and other technologies...&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">theme = &#39;bilberry-hugo-theme&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">enableRobotsTXT = true
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">DefaultContentLanguage = &#34;en&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">googleAnalytics = &#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">[blackfriday]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  hrefTargetBlank = false
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">[params]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  subtitle = &#39;My adventures in IT&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  enableLightDarkTheme = true
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  permanentTopNav = true
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  stickyNav = true
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  toc = true
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  baseColor = &#34;#ff8080&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  siteWidth = &#34;2000px&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  css_modules = [&#34;//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css&#34;]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  js_modules = [&#34;//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js&#34;,&#34;init-cookieconsent.js&#34;]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  author = &#34;Andrew Davidson&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  description = &#34;PowerShell and other technologies... blog&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  keywords = &#34;blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  paginate = 5
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  enable_mathjax = false
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  algolia_search = false
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  resizeImages = true
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  gravatarEMail = &#34;github@kelrys.com&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  customImage = &#34;/images/andrewD_256.png&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  overlayIcon = &#34;fa-home&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  showHeaderLanguageChooser = true
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  enableMomentJs = true
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  dateFormat = &#34;RFC1123&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  dateForm = &#34;RFC1123&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  showReadingTime = false
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  tocMinWordCount = 400
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  showFooter = true
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  amountLatestPostsInFooter = 7
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  amountCategoriesInFooter = 7
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  showFooterLanguageChooser = true
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  showSocialMedia = false
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  showArchive = true
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  archiveDateGrouping = &#34;2006-01&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  copyrightBy = &#34;by Andrew Davidson&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  copyrightUseCurrentYear = true
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  copyrightYearOverride = &#34;2017&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  copyrightUrl = &#34;https://github.com/andrewrdavidson&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  creditsText = &#34;.&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  creditsUrl = &#34;.&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;@</span>
+</span></span><span style="display:flex;"><span>$hugoConfigFile | Out-File -FilePath <span style="color:#e6db74">&#34;./hugo.toml&#34;</span> -Force
+</span></span><span style="display:flex;"><span>git add --all
+</span></span><span style="display:flex;"><span>git commit -am <span style="color:#e6db74">&#34;Set hugo.toml file&#34;</span>
+</span></span><span style="display:flex;"><span>git push -u origin main
+</span></span></code></pre></div><h4 id="add-a-post-or-two">Add a post (or two)</h4>
+<h4 id="set-a-theme">Set a theme</h4>
+<h4 id="publish-to-github-pages">Publish to GitHub Pages</h4>
+<h4 id="add-a-custom-domain-optional">Add a custom domain (optional)</h4>
+
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="http://localhost:1313/tags/setup/">Setup</a>
+                    
+                
+                    
+                    
+                    <a href="http://localhost:1313/tags/github-pages/">Github-Pages</a>
+                    
+                
+                    
+                    
+                    <a href="http://localhost:1313/tags/github-actions/">Github-Actions</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+            
+
+            
+
+        </div>
+    
+
+    </div>
+
+    
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/andrewrdavidson" target="_blank">
+                &copy;
+                
+                2024
+                
+                by Andrew Davidson
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="."
+                target="_blank">.</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+    <script src="http://localhost:1313/theme.js"></script>
+    
+
+    
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js" type="application/javascript"></script>
+    
+    <script src="http://localhost:1313/init-cookieconsent.js" type="application/javascript"></script>
+    
+    
+
+    
+
+    
+</body>
+
+</html>
