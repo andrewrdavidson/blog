@@ -120,8 +120,21 @@ git push -u origin main
 
 #### Add a post (or two)
 
-#### Set a theme
-
 #### Publish to GitHub Pages
 
+enable github pages
+
+Click Settings
+In the "Code and automation" section of the sidebar, click  Pages.
+Under "Build and deployment", under "Source", select GitHub Actions
+Create the workflow in the .github/workflow directory
+
+add workflow
+make it run
+
 #### Add a custom domain (optional)
+
+Go into repo on github website
+Set the domain
+
+(remember to add a CNAME appropriately to make it work)
