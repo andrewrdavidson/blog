@@ -5,7 +5,6 @@ draft = false
 category = ['Hugo','Blog']
 tags = ['setup','github-pages','github-actions']
 +++
-{{< toc >}}
 # Install Pre-Requisites
 
 ##### Install PowerShell 7
