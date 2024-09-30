@@ -1,49 +1,36 @@
-baseURL = 'https://www.kelrys.com/'
-languageCode = 'en-gb'
-title = 'PowerShell and other technologies...'
-theme = 'mainroad'
-enableRobotsTXT = true
-DefaultContentLanguage = "en"
-googleAnalytics = ""
-[blackfriday]
-  hrefTargetBlank = false
-[params]
-  subtitle = 'My adventures in IT'
-  enableLightDarkTheme = true
-  permanentTopNav = true
-  stickyNav = true
-  toc = true
-  baseColor = "#ff8080"
-  siteWidth = "2000px"
-  css_modules = ["//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css"]
-  js_modules = ["//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js","init-cookieconsent.js"]
-  author = "Andrew Davidson"
-  description = "PowerShell and other technologies... blog"
-  keywords = "blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts"
-  paginate = 5
-  enable_mathjax = false
-  algolia_search = false
-  resizeImages = true
-  gravatarEMail = "github@kelrys.com"
-  customImage = "/images/andrewD_256.png"
-  overlayIcon = "fa-home"
-  showHeaderLanguageChooser = true
-  enableMomentJs = true
-  dateFormat = "RFC1123"
-  dateForm = "RFC1123"
-  showReadingTime = false
-  tocMinWordCount = 400
-  showFooter = true
-  amountLatestPostsInFooter = 7
-  amountCategoriesInFooter = 7
-  showFooterLanguageChooser = true
-  showSocialMedia = false
-  showArchive = true
-  archiveDateGrouping = "2006-01"
-  
-  copyrightBy = "by Andrew Davidson"
-  copyrightUseCurrentYear = true
-  copyrightYearOverride = "2017"
-  copyrightUrl = "https://github.com/andrewrdavidson"
-  creditsText = "."
-  creditsUrl = "."
+baseurl = "/"
+title = "Mainroad"
+languageCode = "en-us"
+pagination.pagerSize = "10" # Number of posts per page
+theme = "mainroad"
+disqusShortname = "" # Enable comments by entering your Disqus shortname
+googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+
+#[Author]
+#  name = "John Doe"
+#  bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
+#  avatar = "img/avatar.png"
+
+[Params]
+  description = "John Doe's Personal blog about everything" # Description of your site
+  opengraph = true
+  twitter_cards = false
+  readmore = false # Show "Read more" button in list if true
+  authorbox = true
+  pager = true
+  post_meta = ["date", "categories"] # Order of post meta information
+  mainSections = ["post", "docs"]
+
+[Params.logo]
+  subtitle = "Just another site" # Logo subtitle
+
+[Params.sidebar]
+  home = "right"   # Configure layout for home page
+  list = "right"   # Configure layout for list pages
+  single = "right" # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "categories", "taglist"]
+
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
